@@ -1,28 +1,27 @@
-import Signup from "./Signup.jsx"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Signin from "./Signin.jsx";
+import Signup from "./Signup.jsx";
+import Appbar from "./Appbar.jsx";
+import AddCourse from "./AddCourse.jsx";
 
 function App() {
-  
-  return (
-    <>
-    <Signup></Signup>
-    </>
-  )
+
+    return (
+        <div style={{width: "100vw",
+            height: "100vh",
+            backgroundColor: "#eeeeee"}}
+        >
+            <Router>
+                <Appbar />
+                <Routes>
+                    <Route path={"/addcourse"} element={
+                        <AddCourse />} />
+                    <Route path={"/signin"} element={<Signin />} />
+                    <Route path={"/signup"} element={<Signup />} />
+                </Routes>
+            </Router>
+        </div>
+    );
 }
 
-function TodoApp(props){
-  return <div>
-   {props.text} : Props passing from main component
-   <br/>
-    Todo App :Todo Component
-    <br/>
-    {props.yoyo} :Props passing from main component
-  </div>
-}
-
-function BigText(){
-  return <div>
-
-   hello bigText :Bigtext Component
-  </div>
-}
-export default App
+export default App;
