@@ -1,4 +1,4 @@
-# React Vite project : Build real time features
+# React Vite project : Build real time
 # Inital Phase: React, javascript 
 
    Build reusable components
