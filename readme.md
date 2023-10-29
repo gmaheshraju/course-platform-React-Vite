@@ -28,9 +28,12 @@ Debug the full app using react chrome extesion and improve the performance
 
 Verify the re-rendering and fix unnecessary renedering or any additional calls to server
 
-Introduce Tailwind CSS for few compoenets styling
+Introduce Tailwind CSS for few companies styling
 
 # Phase 5:
+Dockerize the Application
+
+# Phase 6:
 
 Cloud deployment in AWS through CI/CD
 Deploy the application to live using Vercel or Hostinger.
